@@ -9,9 +9,9 @@ public interface ProtocolInfo {
     /**
      * Actual Minecraft: PE protocol version
      */
-    byte CURRENT_PROTOCOL = 107;
-    public final static String MINECRAFT_VERSION = "1.0.9";
-    public final static String MINECRAFT_VERSION_NETWORK = "1.0.9";
+    byte CURRENT_PROTOCOL = 110;
+    public final static String MINECRAFT_VERSION = "1.1.0";
+    public final static String MINECRAFT_VERSION_NETWORK = "1.1.0";
 
     byte LOGIN_PACKET = (byte) 0x01;
     byte PLAY_STATUS_PACKET = (byte) 0x02;
@@ -101,4 +101,6 @@ public interface ProtocolInfo {
     byte PLAY_SOUND_PACKET = (byte) 0x56;
     byte STOP_SOUND_PACKET = (byte) 0x57;
     byte SET_TITLE_PACKET = (byte) 0x58;
+    byte ADD_BEHAVIOR_TREE_PACKET = (byte) 0x59;
+    byte STRUCTURE_BLOCK_UPDATE_PACKET = (byte) 0x5a;
 }
